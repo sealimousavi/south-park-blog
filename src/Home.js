@@ -7,6 +7,8 @@ const Home = () => {
 
   return (
     <div className="home">
+      <h2>All Blogs</h2>
+
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { blogs && <BlogList blogs={blogs} /> }
